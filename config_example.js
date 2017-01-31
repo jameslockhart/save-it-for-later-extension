@@ -1,0 +1,5 @@
+var API_KEY = "<API_KEY>";
+var PROJECT_ID = "<PROJECT_ID>";
+var DATABASE_NAME = "<DATABASE_NAME>";
+var BUCKET = "<BUCKET>";
+var SENDER_ID = "<SENDER_ID>";
