@@ -1,22 +1,17 @@
 {
   "manifest_version": 2,
-
   "name": "Save It for Later",
   "description": "Sign in with your Save it account from your mobile app and start sendig links to your phone",
   "version": "1.0",
-
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/",
-    "https://www.gstatic.com/*"
+    "https://www.gstatic.com/*",
+    "https://*.firebaseio.com/*"
   ],
-  "content_scripts": [
-    {
-      "js": []
-    }
-  ]
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.gstatic.com; object-src 'self'"
 }
